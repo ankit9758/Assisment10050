@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:background="@drawable/rect_round_upper_bg_white"
+        android:paddingHorizontal="@dimen/dp_30">
+
+        <TextView
+            android:id="@+id/tv_pick_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="@string/pick_from"
+            android:textAppearance="@style/txtBoldBlack20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pick_from" />
+
+        <TextView
+            android:id="@+id/tv_Camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/camera"
+            android:textAppearance="@style/txtBoldBlack20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_camera" />
+
+        <View
+            android:id="@+id/view_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Camera" />
+
+        <TextView
+            android:id="@+id/tv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/gallery"
+            android:textAppearance="@style/txtBoldBlack20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_gallery" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_1"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gallery" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
